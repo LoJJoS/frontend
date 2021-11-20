@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;1,700&display=swap");
 
 * {
-  font-weight: 400;
-  font-size: 5vh;
+  border: none;
 }
 
 .container {
@@ -25,12 +24,33 @@
   font-size: 5vh;
 }
 
-.form {
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  font-family: Roboto;
+  margin-bottom: 1.5vh;
+}
+
+.form-roomCode {
+  margin-top: 10vh;
+}
+
+.form-name {
+  margin-bottom: 5vh;
+}
+
+.labelTitle {
+  margin-bottom: 1vh;
+  font-family: "Roboto";
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -39,10 +59,39 @@
   text-align: left;
 }
 
-.body {
+input {
+  background-color: #dfdfdf;
+  border-radius: 12px;
+  height: 75px;
+  width: 35vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 90vh;
-  width: 100vw;
+}
+
+button {
+  background-color: #794ef5;
+  color: white;
+  border-radius: 100px;
+  height: 7.5vh;
+  width: 20vw;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
 }

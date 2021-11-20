@@ -7,7 +7,7 @@ function JoinRoom() {
       <div className="header">😀 FACE IT</div>
       <div className="body">
         <form className="form-roomCode">
-          <div className="roomCode">Room Code</div>
+          <div className="labelTitle roomCode">Room Code</div>
           <label>
             <input
               type="text"
@@ -17,7 +17,7 @@ function JoinRoom() {
           </label>
         </form>
         <form className="form-name">
-          <div className="roomCode">Your Name</div>
+          <div className="labelTitle name">Your Name</div>
           <label>
             <input
               type="text"
@@ -26,7 +26,10 @@ function JoinRoom() {
             />
           </label>
         </form>
-        <button></button>
+        <div className="buttons">
+          <button className="joinGame">Join Game</button>
+          <button className="createGame">Create Game</button>
+        </div>
       </div>
     </div>
   );
