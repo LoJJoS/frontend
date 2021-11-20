@@ -22,7 +22,7 @@
   line-height: 5vh;
 }
 
-.body {
+.bodyJoinRoom {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,12 +73,8 @@ input {
   text-align: left;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-}
-
-button {
+.joinGame,
+.createGame {
   background-color: #794ef5;
   color: white;
   border-radius: 100px;

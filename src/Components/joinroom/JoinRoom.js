@@ -5,7 +5,7 @@ function JoinRoom() {
   return (
     <div className="containerJoinRoom">
       <div className="headerJoinRoom">😀 FACE IT</div>
-      <div className="body">
+      <div className="bodyJoinRoom">
         <form className="form-roomCode">
           <div className="labelTitle roomCode">Room Code</div>
           <label>
@@ -26,10 +26,8 @@ function JoinRoom() {
             />
           </label>
         </form>
-        <div className="buttons">
-          <button className="joinGame">Join Game</button>
-          <button className="createGame">Create Game</button>
-        </div>
+        <button className="joinGame">Join Game</button>
+        <button className="createGame">Create Game</button>
       </div>
     </div>
   );

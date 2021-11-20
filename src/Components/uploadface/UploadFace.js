@@ -1,23 +1,40 @@
-import React from 'react';
+import React from "react";
 import "./UploadFace.css";
 
-function UploadFace(){
-    return (
-        <>
-        <div className="c-container">
-            <div className="label-text">Make this face!</div>
-            <img className="face-container" alt="face here" src="https://www.nicepng.com/png/full/5-52286_download-laughing-iphone-emoji-jpg-emoji-happy-png.png"/>
+function UploadFace() {
+  return (
+    <div className="containerUploadFace">
+      <div className="headerUploadFace">😀 FACE IT</div>
+      <div className="makeThisFaceContainer">
+        <div className="label-text">Make this face!</div>
+        <div className="faceContainer">
+          <img
+            className="faceUploadFace"
+            alt="face here"
+            src="https://www.nicepng.com/png/full/5-52286_download-laughing-iphone-emoji-jpg-emoji-happy-png.png"
+          />
         </div>
-        <div className="flex-row">
-            <button className="photo-container" onClick={() => {console.log('TODO: Take Photo')}}>
-                <div className="photo-text">Take a photo</div>
-            </button>
-            <button className="photo-container" onClick={() => {console.log('TODO: Upload')}}>
-                <div className="photo-text">Upload a photo</div>
-            </button>
+        <div className="buttonsUploadFace">
+          <button
+            className="button takePhoto"
+            //   onClick={() => {
+            //     console.log("TODO: Take Photo");
+            //   }}
+          >
+            Take a photo
+          </button>
+          <button
+            className="button uploadPhoto"
+            //   onClick={() => {
+            //     console.log("TODO: Upload");
+            //   }}
+          >
+            Upload a photo
+          </button>
         </div>
-        </>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default UploadFace;

@@ -60,12 +60,12 @@ room .table {
   align-self: center;
 }
 
-button {
+.startButton {
+  background-color: #794ef5;
   color: white;
   border-radius: 100px;
   height: 7.5vh;
   width: 20vw;
-  flex: 1;
   margin-top: 5vh;
   margin-bottom: 1vh;
   font-family: "Roboto", sans-serif;

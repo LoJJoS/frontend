@@ -10,7 +10,7 @@ function MakeRoom() {
   return (
     <div className="containerMakeRoom">
       <div className="headerMakeRoom">😀 FACE IT</div>
-      <div className="c-container">
+      <div className="c-containerMakeRoom">
         <div className="hero-text-container">
           <div className="hero text">Make this face!</div>
         </div>

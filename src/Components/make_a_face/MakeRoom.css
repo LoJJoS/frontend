@@ -20,7 +20,7 @@
   line-height: 5vh;
 }
 
-.c-container {
+.c-containerMakeRoom {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -28,19 +28,13 @@
   width: 100vw;
 }
 
+.hero-text-container {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
 .hero {
   display: flex;
   justify-content: center;
   align-self: center;
-}
-
-.hero .text {
-  font-size: 8vw;
-  margin-bottom: 8vh;
-}
-
-.hero .face {
-  justify-content: center;
-  align-self: center;
-  width: 25vw;
 }
