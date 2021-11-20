@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* <JoinRoom></JoinRoom> */}
-      <Lobby />
+      {/* <Lobby /> */}
       <MakeRoom />
     </div>
   );
