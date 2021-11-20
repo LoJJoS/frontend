@@ -1,0 +1,40 @@
+.containerMakeRoom {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-content: center;
+}
+
+.headerMakeRoom {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: #794ef5;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5vh;
+}
+
+.c-containerMakeRoom {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 90vh;
+  width: 100vw;
+}
+
+.hero-text-container {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}

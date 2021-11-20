@@ -1,16 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;1,700&display=swap");
-
 * {
   border: none;
 }
 
-.container {
+.containerJoinRoom {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-.header {
+.headerJoinRoom {
   display: flex;
   height: 10vh;
   width: 100vw;
@@ -21,10 +19,10 @@
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 400;
-  font-size: 5vh;
+  line-height: 5vh;
 }
 
-.body {
+.bodyJoinRoom {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,12 +73,8 @@ input {
   text-align: left;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: column;
-}
-
-button {
+.joinGame,
+.createGame {
   background-color: #794ef5;
   color: white;
   border-radius: 100px;
