@@ -11,7 +11,7 @@ function MakeRoom() {
         <>
         <div className="c-container">
             <div className="hero-text-container">
-                <h2 className="hero-text">Make THIS face!</h2>
+                <h2 className="hero-text">Make this face!</h2>
             </div>
             <div>
                 <img className="hero-face" src={images[0]} />

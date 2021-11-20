@@ -1,0 +1,49 @@
+.c-container {
+    margin: auto;
+    width: 50%;
+    padding: 5vw;
+}
+
+.label-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vw;
+    line-height: 75px;
+    text-align: center;
+    margin: 1vw;
+    margin-bottom: 7vw;
+}
+
+.face-container {
+    width: 15vw;
+    height: auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo-container {
+   position: relative;
+   border: none;
+   background-color: #7449EF;
+   border-radius: 15px;
+   color: white;
+   width: 25vw;
+   height: 6vw;
+   margin: 4vw;
+   cursor: pointer;
+}
+
+.photo-text {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-style: normal;
+    vertical-align: middle;
+    line-height: 6vw;
+}
