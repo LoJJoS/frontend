@@ -1,2 +1,97 @@
-InputGroup {
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;1,700&display=swap");
+
+* {
+  border: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.header {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: #794ef5;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5vh;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 1.5vh;
+}
+
+.form-roomCode {
+  margin-top: 10vh;
+}
+
+.form-name {
+  margin-bottom: 5vh;
+}
+
+.labelTitle {
+  margin-bottom: 1vh;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+input {
+  background-color: #dfdfdf;
+  border-radius: 12px;
+  height: 75px;
+  width: 35vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #794ef5;
+  color: white;
+  border-radius: 100px;
+  height: 7.5vh;
+  width: 20vw;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
 }
