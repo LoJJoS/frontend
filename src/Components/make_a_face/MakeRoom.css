@@ -1,0 +1,15 @@
+.c-container {
+    margin: auto;
+    width: 90vw;
+    padding: 5px;
+}
+
+.hero-text {
+    font-size: 8vw;
+    margin-bottom: 8vh;
+}
+
+.hero-face {
+    width: 25vw;
+    height: auto;
+}
