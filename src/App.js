@@ -1,10 +1,12 @@
 import "./App.css";
 import JoinRoom from "./Components/joinroom/JoinRoom";
+import Lobby from "./Components/lobby/Lobby";
 
 function App() {
   return (
     <div className="App">
-      <JoinRoom></JoinRoom>
+      {/* <JoinRoom></JoinRoom> */}
+      <Lobby />
     </div>
   );
 }

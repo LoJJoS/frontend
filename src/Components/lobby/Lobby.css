@@ -1,0 +1,7 @@
+Row {
+    flex-direction: row;
+}
+Col {
+    border-width: 5rem;
+    border-color: blue;
+}
