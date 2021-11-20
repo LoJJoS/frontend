@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       {/* <JoinRoom></JoinRoom> */}
       <Lobby />
-      <MakeRoom />
+      {/* <MakeRoom /> */}
     </div>
   );
 }

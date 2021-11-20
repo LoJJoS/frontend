@@ -1,47 +1,77 @@
+.containerLobby {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-content: center;
+}
+
+.headerLobby {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: #794ef5;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5vh;
+}
+
+room .table {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90vw;
+  padding: 5px;
+}
+
 .row {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .col {
-    border-radius: 1.1vh;
-    height: 4.5vw;
-    width: 30vw;
-    background-color: #DFDFDF;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #DFDFDF;
-    margin: 2.4vw;
-    margin-bottom: 6vh;
-  }
-  
-  .username {
-    font-size: 3vw;
-    position: relative;
-    top: 0.5vh;
-    top: 0.5vw;
-    /* left: 0.5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.col {
+  border-radius: 1.1vh;
+  height: 4.5vw;
+  width: 30vw;
+  background-color: #dfdfdf;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #dfdfdf;
+  margin: 2.4vw;
+  margin-bottom: 6vh;
+}
+
+.username {
+  font-size: 3vw;
+  position: relative;
+  top: 0.5vh;
+  top: 0.5vw;
+  /* left: 0.5vw;
     right: 0.5vw; */
-    text-align: center;
-  }
-  
-  .names {
-    margin: auto;
-    width: 90vw;
-    padding: 5px;
-  }
-  
-  .startButton {
-    font-size: 3vw;
-    border: none;
-    border-radius: 2vw;
-    background-color: #7449EF;
-    position: relative;
-    top: 4vh;
-    margin: auto;
-    margin-top: 4vh;
-    width: 17vw;
-    padding: 5px;
-    color: white;
-  }
-  
+  text-align: center;
+}
+
+.buttonContainer {
+  align-self: center;
+}
+
+button {
+  color: white;
+  border-radius: 100px;
+  height: 7.5vh;
+  width: 20vw;
+  flex: 1;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}

@@ -2,13 +2,13 @@
   border: none;
 }
 
-.container {
+.containerJoinRoom {
   display: flex;
   flex-direction: column;
   align-content: center;
 }
 
-.header {
+.headerJoinRoom {
   display: flex;
   height: 10vh;
   width: 100vw;
@@ -19,7 +19,7 @@
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 400;
-  font-size: 5vh;
+  line-height: 5vh;
 }
 
 .body {

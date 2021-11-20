@@ -3,8 +3,8 @@ import React from "react";
 
 function JoinRoom() {
   return (
-    <div className="container">
-      <div className="header">😀 FACE IT</div>
+    <div className="containerJoinRoom">
+      <div className="headerJoinRoom">😀 FACE IT</div>
       <div className="body">
         <form className="form-roomCode">
           <div className="labelTitle roomCode">Room Code</div>
