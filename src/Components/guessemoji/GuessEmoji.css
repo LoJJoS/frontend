@@ -104,3 +104,27 @@ option {
     text-align: middle;
     display: none;
 }
+
+/* Guessing time page*/
+.thinkingEmoji, .guessingTime-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.thinkingEmoji {
+    width: 8vw;
+    height: auto;
+}
+
+.guessingTime-text {
+    margin: 4vw;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: middle;
+}
