@@ -20,21 +20,13 @@
   line-height: 5vh;
 }
 
-room .table {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 90vw;
-  padding: 5px;
-}
-
-.row {
+.rowLobby {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-.col {
+.colLobby {
   border-radius: 1.1vh;
   height: 4.5vw;
   width: 30vw;
@@ -50,9 +42,6 @@ room .table {
   font-size: 3vw;
   position: relative;
   top: 0.5vh;
-  top: 0.5vw;
-  /* left: 0.5vw;
-    right: 0.5vw; */
   text-align: center;
 }
 
