@@ -8,7 +8,7 @@ import ScoreBoard from "./Components/scoreboard/ScoreBoard";
 function App() {
   return (
     <div className="App">
-      {/* <JoinRoom></JoinRoom> */}
+      {/* <JoinRoom /> */}
       {/* <Lobby /> */}
       {/* <MakeRoom /> */}
       {/* <UploadFace /> */}
