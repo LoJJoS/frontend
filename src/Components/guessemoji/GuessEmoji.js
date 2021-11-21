@@ -5,27 +5,33 @@ import "./GuessEmoji.css";
 function GuessEmoji() {
 
   return (
-    <div className="containerUploadFace">
-      <div className="headerUploadFace">😀 FACE IT</div>
-      <div className="makeThisFaceContainer">
+    <div className="containerGuessEmoji">
+      <div className="headerGuessEmoji">😀 FACE IT</div>
+      <div className="guessEmojiContainer">
         <div className="guess-text">Who made this face?</div>
         <div className="faceContainer">
           <img
-            className="faceUploadFace"
+            className="faceGuessEmoji"
             alt="face here"
             src="https://www.nicepng.com/png/full/5-52286_download-laughing-iphone-emoji-jpg-emoji-happy-png.png"
           />
         </div>
 
-        <form classname="dropdown">
-          <select name="Select a name" classname="dropdown-menu">
+        <div className="guessContainer" // Hide this after the timer runs out
+          >
+          <select name="Select a name" className="dropdown-menu">
             <option value="1">John</option>
             <option value="2">Jane</option>
             <option value="3">Jason</option>
             <option value="4">Jessy</option>
             <option value="5">James</option>
           </select>
-        </form>
+
+          <div className="correct" // Change text depending on correct or not
+            > 
+            ✅ Correct!
+          </div>
+        </div>
 
       </div>
     </div>

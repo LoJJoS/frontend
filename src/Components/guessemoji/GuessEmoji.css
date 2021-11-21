@@ -19,10 +19,7 @@ select, option {
     border-radius: 10px;
     border-width: 2px;
     border-color: #DFDFDF;
-}
-
-select:selection {
-    border-color: #794ef5;
+    /*display: none;*/
 }
 
 option {
@@ -31,7 +28,7 @@ option {
     margin-bottom: 3vh;
 }
 
-.containerUploadFace {
+.containerGuessEmoji {
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -39,7 +36,7 @@ option {
     align-content: center;
 }
 
-.headerUploadFace {
+.headerGuessEmoji {
     display: flex;
     height: 10vh;
     width: 100vw;
@@ -53,13 +50,18 @@ option {
     line-height: 5vh;
 }
 
-.makeThisFaceContainer {
+.guessEmojiContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     height: 90vh;
     width: 100vw;
+}
+
+.faceGuessEmoji {
+    width: 15vw;
+    height: auto;
 }
 
 .guess-text {
@@ -80,23 +82,25 @@ option {
     align-content: center;
 }
 
-.faceUploadFace {
-    width: 15vw;
-    height: auto;
+.guessContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 1.5vh;
 }
 
-.name-select-btn {
-    background-color: #7449ef;
-    border-radius: 15px;
-    color: white;
-    width: 25vw;
-    height: 6vw;
+.correct {
     margin: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     font-family: "Roboto";
     font-size: 32px;
     font-style: normal;
-    font-weight: 400;
     line-height: 38px;
     letter-spacing: 0em;
     text-align: middle;
+    display: none;
 }
