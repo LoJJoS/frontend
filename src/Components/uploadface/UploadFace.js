@@ -1,13 +1,15 @@
 import React from "react";
+import axios from "axios";
 import "./UploadFace.css";
 
-function UploadFace() {
+function UploadFace({ setFaceUploaded, setFace }) {
   function handleFile(event) {
     let file = event.target.files[0];
     var fileExt = file.name.split('.').pop().toLowerCase();
     window.alert(fileExt)
     if (fileExt === "jpg" || fileExt === "jpeg" || fileExt === "png"){
       readFile(file, fileExt);
+      setFaceUploaded(true);
     } else {
       window.alert("Wrong file type. Please upload a jpg or png.")
     }
@@ -15,28 +17,51 @@ function UploadFace() {
 
   function readFile(file, fileExt) {
     let myReader = new FileReader();
-    myReader.onloadend = function (e) {
-        cb(myReader.result);
+    myReader.onloadend = async function (e) {
+        const parsedData = myReader.result.substr(myReader.result.indexOf(',') + 1)
+        await cb(parsedData, fileExt);
     };
     myReader.readAsDataURL(file);
   };
 
-  function cb(base64string, fileExt) {
-    /*do next steps here like sending image base64string to the server.*/
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://34.130.207.147:5000/upload", true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({
-      "extension": fileExt, "data": base64string
+  async function cb(base64string, fileExt) {
+    console.log(base64string);
+    const baseUrl = 'http://34.130.207.147:5000'
+    const upload_response = await fetch(`${baseUrl}/upload`, {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      },
+      body: JSON.stringify({
+        "extension": fileExt,
+        "data": base64string,
+      })
+    })
+    const { filename } = await upload_response.json();
+    console.log(JSON.stringify({
+      "imgs": [filename],
     }));
-
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == XMLHttpRequest.DONE) {
-          alert(xhr.responseText);
-      }
-    }
+    const create_response = await fetch(`${baseUrl}/create-image-test?room=${"AMDBNEL"}`, {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      },
+      body: JSON.stringify({
+        "imgs": [filename],
+      })
+    });
+    const { result } = await create_response.json();
+    setFace(result[0]);
+    setFaceUploaded(true);
+    console.log(result);
 
   }
+
+
 
   return (
     <div className="containerUploadFace">

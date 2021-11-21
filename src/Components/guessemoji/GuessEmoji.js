@@ -1,9 +1,9 @@
 import React from "react";
-import 'react-dropdown/style.css';
+// import 'react-dropdown/style.css';
 import "./GuessEmoji.css";
 
-function GuessEmoji() {
-
+function GuessEmoji({ currentFacePath }) {
+  const path = `../../public/.tmp/output/${currentFacePath}`
   return (
     <div className="containerGuessEmoji">
       <div className="headerGuessEmoji">😀 FACE IT</div>
@@ -15,7 +15,7 @@ function GuessEmoji() {
             <img
               className="faceGuessEmoji"
               alt="face here"
-              src="https://www.nicepng.com/png/full/5-52286_download-laughing-iphone-emoji-jpg-emoji-happy-png.png"
+              src={path}
             />
           </div>
 
