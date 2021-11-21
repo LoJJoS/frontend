@@ -1,8 +1,18 @@
 import React from "react";
 import "./Lobby.css";
+import { ref, onValue } from "firebase/database";
 // make useState hook to insert an Array of players into the tables
 
-function Lobby() {
+function Lobby({ db, roomCode }) {
+
+  const usersRef = ref(db, 'rooms/' + roomCode + '/users');
+  onValue(usersRef, (data) => {
+    const users = data.val();
+    console.log(Object.keys(users));
+    const userCount = users.length;
+    console.log(`reading: `, users);
+  });
+
   return (
     <div className="containerLobby">
       <div className="headerLobby">
