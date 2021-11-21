@@ -3,72 +3,69 @@ import React, { useState } from "react";
 import { ref, set, onValue, get, child, push } from "@firebase/database";
 import bcrypt from "bcryptjs";
 
+function JoinRoom({ db, setRoom, setId }) {
+  const [name, setName] = useState("");
+  const [code, setCode] = useState("");
 
-function JoinRoom( { db, setRoom, setId } ) {
-
-  const [name, setName] = useState('');
-  const [code, setCode] = useState('');
-  
   const handleRoomChange = (event) => {
     setCode(event.target.value);
-  }
+  };
 
   const handleNameChange = (event) => {
     setName(event.target.value);
-  }
+  };
 
   const handleJoin = async () => {
-    if (code === "" || name === ""){
+    if (code === "" || name === "") {
       alert("Please enter a name or code!");
       return;
     }
     const roomRef = ref(db, `rooms/${code}/users`);
     const roomData = await get(roomRef);
-    if (roomData.exists()){
+    if (roomData.exists()) {
       const newUser = {
         name,
         path_to_photo: "",
-      }
+      };
       const newRoomRef = push(roomRef);
       set(newRoomRef, newUser);
-    }
-    else {
-      alert('That room does not exist!');
+    } else {
+      alert("That room does not exist!");
       return;
     }
     setId(name);
     setRoom(code);
-  }
+  };
 
   const handleCreate = async () => {
-    if (code === "" || name === ""){
+    if (code === "" || name === "") {
       alert("Please enter a name or code!");
       return;
     }
     // Bcrypt stuff
     // const salt = await bcrypt.genSalt(10);
-    const roomId = name+code;
+    const roomId = name + code;
     // roomId = roomId.replace(/(\$|\.|\#|\[|\])+/g, "");
 
-    const roomRef = ref(db,'rooms/');
+    const roomRef = ref(db, "rooms/");
     const roomData = await get(child(roomRef, `${code}`));
-    if (roomData.exists()){
-      alert('Duplicate room found!');
+    if (roomData.exists()) {
+      alert("Duplicate room found!");
       return;
     }
-    
-    set(ref(db, 'rooms/' + code), {
+
+    set(ref(db, "rooms/" + code), {
       room_code: code,
       users: [
         {
           name,
           path_to_photo: "",
-        }
+        },
       ],
     });
     setId(name);
     setRoom(code);
-  }
+  };
 
   return (
     <div className="containerJoinRoom">
@@ -77,25 +74,21 @@ function JoinRoom( { db, setRoom, setId } ) {
         <form className="form-roomCode">
           <div className="labelTitle roomCode">Room Code</div>
           <label>
-            <input
-              type="text"
-              value={code}
-              onChange={handleRoomChange}
-            />
+            <input type="text" value={code} onChange={handleRoomChange} />
           </label>
         </form>
         <form className="form-name">
           <div className="labelTitle name">Your Name</div>
           <label>
-            <input
-              type="text"
-              value={name}
-              onChange={handleNameChange}
-            />
+            <input type="text" value={name} onChange={handleNameChange} />
           </label>
         </form>
-        <button className="joinGame" onClick={() => handleJoin()}>Join Game</button>
-        <button className="createGame" onClick={() => handleCreate()}>Create Game</button>
+        <button className="joinGame" onClick={() => handleJoin()}>
+          Join Game
+        </button>
+        <button className="createGame" onClick={() => handleCreate()}>
+          Create Game
+        </button>
       </div>
     </div>
   );
