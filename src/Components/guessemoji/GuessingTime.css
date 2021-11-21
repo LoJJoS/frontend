@@ -1,0 +1,40 @@
+.containerGuessingTime {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-content: center;
+}
+
+.guessingTimeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+/* Guessing time page*/
+.thinkingEmoji, .guessingTime-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.thinkingEmoji {
+    width: 8vw;
+    height: auto;
+}
+
+.guessingTime-text {
+    margin: 4vw;
+    font-family: "Roboto";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: middle;
+}
