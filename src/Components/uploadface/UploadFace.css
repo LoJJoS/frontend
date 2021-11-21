@@ -51,6 +51,10 @@
   width: 100vw;
 }
 
+.emoji {
+  height: 50vh;
+}
+
 .faceUploadFace {
   width: 20vw;
   height: auto;

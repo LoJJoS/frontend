@@ -4,8 +4,7 @@ import { ref, onValue } from "firebase/database";
 // make useState hook to insert an Array of players into the tables
 
 function Lobby({ db, roomCode }) {
-
-  const usersRef = ref(db, 'rooms/' + roomCode + '/users');
+  const usersRef = ref(db, "rooms/" + roomCode + "/users");
   onValue(usersRef, (data) => {
     const users = data.val();
     console.log(Object.keys(users));
