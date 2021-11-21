@@ -3,10 +3,6 @@ import React, { useState } from "react";
 import { ref, set, onValue, get, child, push } from "@firebase/database";
 import bcrypt, { hash } from "bcryptjs";
 
-function JoinRoom({ db, setRoom, setId }) {
-  const [name, setName] = useState("");
-  const [code, setCode] = useState("");
-
   function JoinRoom({
     db,
     setRoom,
@@ -104,6 +100,5 @@ function JoinRoom({ db, setRoom, setId }) {
       </div>
     );
   }
-}
 
 export default JoinRoom;
