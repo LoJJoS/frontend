@@ -9,17 +9,38 @@
 }
 
 .headerScoreBoard {
-  display: flex;
-  height: 10vh;
-  width: 100vw;
   background-color: #794ef5;
   color: white;
-  justify-content: center;
+  width: 100vw;
+  display: flex;
+  height: 10vh;
   align-items: center;
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 400;
   line-height: 5vh;
+}
+
+.headerScoreBoard.name {
+  width: 50vw;
+  justify-content: center;
+}
+
+.playAgain {
+  background-color: white;
+  color: #794ef5;
+  border-radius: 100px;
+  height: 7.5vh;
+  width: 20vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 5vh;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .tableScoreBoard {

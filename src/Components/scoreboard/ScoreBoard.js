@@ -7,7 +7,10 @@ function ScoreBoard() {
 
   return (
     <div className="containerScoreBoard">
-      <div className="headerLobby name">😀 FACE IT</div>
+      <div className="headerScoreBoard">
+        <div className="headerScoreBoard name">😀 FACE IT</div>
+        <button className="playAgain">Play Again</button>
+      </div>
       <div className="tableScoreBoard">
         <div className="rowScoreBoard">
           <div className="scoreContainer">

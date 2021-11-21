@@ -7,11 +7,11 @@
 }
 
 .headerLobby {
+  background-color: #794ef5;
+  color: white;
   display: flex;
   height: 10vh;
   width: 100vw;
-  background-color: #794ef5;
-  color: white;
   justify-content: center;
   align-items: center;
   font-family: "Bebas Neue";
