@@ -1,13 +1,13 @@
 import React from "react";
 import 'react-dropdown/style.css';
-import "./GuessEmoji.css";
+import "./GuessingTime.css";
 
 function GuessingTime() {
 
   return (
-    <div className="containerGuessEmoji">
+    <div className="containerGuessingTime">
       <div className="headerGuessEmoji">😀 FACE IT</div>
-      <div className="guessEmojiContainer">
+      <div className="guessingTimeContainer">
         <img
         className="thinkingEmoji"
         alt="thinking emoji"
