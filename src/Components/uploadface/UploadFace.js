@@ -9,7 +9,6 @@ function UploadFace() {
         <div className="label-text">Make this face!</div>
         <div className="faceContainer">
           <img
-            className="faceUploadFace"
             alt="face here"
             src="https://www.nicepng.com/png/full/5-52286_download-laughing-iphone-emoji-jpg-emoji-happy-png.png"
           />
