@@ -1,10 +1,10 @@
 import "./JoinRoom.css";
 import React, { useState } from "react";
 import { ref, set, onValue, get, child, push } from "@firebase/database";
-import bcrypt from "bcryptjs";
+import bcrypt, { hash } from "bcryptjs";
 
 
-function JoinRoom( { db, setRoom, setId } ) {
+function JoinRoom( { db, setRoom, setId, hasHostPrivileges, updateRoomStatus } ) {
 
   const [name, setName] = useState('');
   const [code, setCode] = useState('');
@@ -38,6 +38,7 @@ function JoinRoom( { db, setRoom, setId } ) {
     }
     setId(name);
     setRoom(code);
+    updateRoomStatus("idling");
   }
 
   const handleCreate = async () => {
@@ -45,10 +46,7 @@ function JoinRoom( { db, setRoom, setId } ) {
       alert("Please enter a name or code!");
       return;
     }
-    // Bcrypt stuff
-    // const salt = await bcrypt.genSalt(10);
     const roomId = name+code;
-    // roomId = roomId.replace(/(\$|\.|\#|\[|\])+/g, "");
 
     const roomRef = ref(db,'rooms/');
     const roomData = await get(child(roomRef, `${code}`));
@@ -59,6 +57,7 @@ function JoinRoom( { db, setRoom, setId } ) {
     
     set(ref(db, 'rooms/' + code), {
       room_code: code,
+      room_status: "idling",
       users: [
         {
           name,
@@ -68,6 +67,8 @@ function JoinRoom( { db, setRoom, setId } ) {
     });
     setId(name);
     setRoom(code);
+    updateRoomStatus("idling");
+    hasHostPrivileges(true);
   }
 
   return (

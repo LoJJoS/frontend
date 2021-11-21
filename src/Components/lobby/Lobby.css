@@ -20,6 +20,13 @@
   line-height: 5vh;
 }
 
+.tableLobby {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1vw;
+  padding: 5px
+}
+
 .rowLobby {
   display: flex;
   justify-content: center;
@@ -29,12 +36,12 @@
 .colLobby {
   border-radius: 1.1vh;
   height: 4.5vw;
-  width: 30vw;
+  width: 27vw;
   background-color: #dfdfdf;
   border-style: solid;
   border-width: 3px;
   border-color: #dfdfdf;
-  margin: 2.4vw;
+  margin: 1.4vw;
   margin-bottom: 6vh;
 }
 
@@ -64,3 +71,4 @@
   letter-spacing: 0em;
   text-align: center;
 }
+
