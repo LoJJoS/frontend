@@ -60,12 +60,12 @@ function UploadFace() {
           <input
             type="file"
             accept="image/*"
-            onChange="handleImageUpload()"
+            //onChange="handleImageUpload()"
             id="upload"
             onChange={handleFile}
             hidden
           />
-          <label for="upload" className="button uploadPhoto">
+          <label form="upload" className="button uploadPhoto">
             Upload a photo
           </label>
 

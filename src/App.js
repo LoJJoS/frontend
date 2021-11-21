@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { ref, onChildAdded, onValue } from "firebase/database";
+// import { StateContext } from "./Contexts/StateContext";
 import "./App.css";
 import JoinRoom from "./Components/joinroom/JoinRoom";
 import Lobby from "./Components/lobby/Lobby";
@@ -49,6 +50,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* <StateContext.Provider value={{ roomStatus, setRoomStatus }}> */}
       {userId !== "" ? null : (
         <JoinRoom
           db={database}
@@ -70,7 +72,8 @@ function App() {
       ) : null}
       {/* <MakeRoom /> */}
       {/* <UploadFace /> */}
-      <PlayerFaces />
+      {/* <PlayerFaces /> */}
+      {/* </StateContext.Provider> */}
     </div>
   );
 }
