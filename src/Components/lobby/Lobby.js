@@ -6,51 +6,51 @@ function Lobby() {
   return (
     <div className="containerLobby">
       <div className="headerLobby">
-        <div className="headerLobby name">😀 FACE IT ROOM</div>
-        <div className="headerLobby number"> CODE: 12345</div>
+        <div className="headerLobby name">😀 FACE IT</div>
+        <div className="headerLobby number"> ROOM CODE: 12345</div>
       </div>
-      <div className="table">
-        <div className="row">
-          <div className="col">
+      <div className="tableLobby">
+        <div className="rowLobby">
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
-          <div className="col">
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
-          <div className="col">
-            <div className="username">Jason</div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <div className="username">Jason</div>
-          </div>
-          <div className="col">
-            <div className="username">Jason</div>
-          </div>
-          <div className="col">
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
         </div>
-        <div className="row">
-          <div className="col">
+        <div className="rowLobby">
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
-          <div className="col">
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
-          <div className="col">
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
         </div>
-        <div className="row">
-          <div className="col">
+        <div className="rowLobby">
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
-          <div className="col">
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
-          <div className="col">
+          <div className="colLobby">
+            <div className="username">Jason</div>
+          </div>
+        </div>
+        <div className="rowLobby">
+          <div className="colLobby">
+            <div className="username">Jason</div>
+          </div>
+          <div className="colLobby">
+            <div className="username">Jason</div>
+          </div>
+          <div className="colLobby">
             <div className="username">Jason</div>
           </div>
         </div>

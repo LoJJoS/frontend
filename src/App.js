@@ -3,14 +3,16 @@ import JoinRoom from "./Components/joinroom/JoinRoom";
 import Lobby from "./Components/lobby/Lobby";
 import MakeRoom from "./Components/make_a_face/MakeRoom";
 import UploadFace from "./Components/uploadface/UploadFace";
+import ScoreBoard from "./Components/scoreboard/ScoreBoard";
 
 function App() {
   return (
     <div className="App">
-      {/* <JoinRoom></JoinRoom> */}
+      {/* <JoinRoom /> */}
       {/* <Lobby /> */}
       {/* <MakeRoom /> */}
-      <UploadFace />
+      {/* <UploadFace /> */}
+      <ScoreBoard />
     </div>
   );
 }

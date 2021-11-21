@@ -46,13 +46,13 @@
 
 .faceContainer {
   display: flex;
-  width: 100vw;
   justify-content: center;
   align-content: center;
+  width: 100vw;
 }
 
 .faceUploadFace {
-  width: 15vw;
+  width: 20vw;
   height: auto;
 }
 
@@ -69,6 +69,8 @@
   width: 25vw;
   height: 6vw;
   margin: 4vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   font-family: "Roboto";
   font-size: 32px;
   font-style: normal;
