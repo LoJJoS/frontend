@@ -1,3 +1,27 @@
+.rounds, .guessEmojiTimer {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    padding: 2vw;
+}
+
+.rounds {
+    float: left;
+}
+
+.guessEmojiTimer {
+    float: right;
+    color: #FFFFFF;
+    background-color: #794ef5;
+    border-radius: 100%;
+    margin: 10px;
+}
+
 select, option {
     font-family: "Roboto";
     font-style: normal;
@@ -11,10 +35,6 @@ select, option {
     width: 30vw;
     padding-left: 2vw;
     padding-right: 2vw;
-
-    max-height:200px;
-    overflow:scroll; 
-
     border-style: solid;
     border-radius: 10px;
     border-width: 2px;
@@ -50,13 +70,20 @@ option {
     line-height: 5vh;
 }
 
+.outerGuessEmojiContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    align-content: center;
+}
+
 .guessEmojiContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
     height: 90vh;
-    width: 100vw;
+    width: 88vw;
 }
 
 .faceGuessEmoji {
