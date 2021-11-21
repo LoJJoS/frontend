@@ -1,0 +1,91 @@
+* {
+  border: none;
+}
+
+.containerUploadFace {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-content: center;
+}
+
+.headerUploadFace {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: #794ef5;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5vh;
+}
+
+.makeThisFaceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.label-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5vw;
+  line-height: 75px;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.faceContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+}
+
+.faceUploadFace {
+  width: 20vw;
+  height: auto;
+}
+
+.buttonsUploadFace {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  background-color: #7449ef;
+  border-radius: 15px;
+  color: white;
+  width: 25vw;
+  height: 6vw;
+  margin: 4vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: middle;
+}
+
+.photo-text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: bold;
+  font-style: normal;
+  vertical-align: middle;
+  line-height: 6vw;
+}
